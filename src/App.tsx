@@ -3,15 +3,18 @@ import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
 
 import './global.css'
+import { EstiloGlobal, Container } from './styles'
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <div className="container">
-        <ListaVagas />
-      </div>
+      <EstiloGlobal>
+        <Header />
+        <Hero />
+        <Container>
+          <ListaVagas />
+        </Container>
+      </EstiloGlobal>
     </>
   )
 }
